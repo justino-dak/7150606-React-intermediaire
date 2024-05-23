@@ -28,7 +28,7 @@ describe('Card', () => {
         />
       </ThemeProvider>
     )
-    screen.debug()
+    // screen.debug()
     const cardTitle = screen.getByText(/Harry/i)
     const parentNode = cardTitle.closest('div')
     fireEvent.click(parentNode)
